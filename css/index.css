@@ -1,1 +1,7 @@
-/* Compiled code should go here! */
+h1 {
+  color: lightslategray;
+  background-color: orange;
+}
+body {
+  background-color: green;
+}
