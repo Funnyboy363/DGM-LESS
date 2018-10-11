@@ -1,8 +1,242 @@
-h1 {
-    color: lightslategray;
-    background-color: orange;
-}// LESS Code Here
 
-body {
-    background-color: green;
+* {
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+}
+
+
+
+  /* Small Screen */
+  @media screen and (max-width: 500px) {
+    #header {
+      border: 1px black solid;
+      border-left: none;
+      border-right: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;  
+      margin-top: 3.5rem;
+      padding: 1px 0;
+
+
+    }
+    
+
+    ul.menu {
+      display: block;
+      text-decoration: none;
+      list-style-type: none;
+    }
+
+    p {
+      text-align: center;
+      font-size: .8rem;
+      margin: .3rem 0;
+    }
+
+    p.deal {
+      background-color: orange;
+      padding: .4rem 0;
+      width: 100%;
+    }
+
+    #content {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+  
+    
+    figure.image, figure.image2 {
+      background-color: darkgray;
+      width: 100%;
+      height: 20rem;
+      margin: 1rem auto;
+
+    }
+
+    #smallbox {
+      background-color: darkgray;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: -2rem;
+    }
+    
+
+    #extra {
+      display: flex;
+      flex-direction: row;
+    }
+
+
+figure.image3 {
+  background-color: darkgray;
+  width: 100%;
+  height: 15rem;
+  margin: .2rem .5rem;
+}
+
+      } /* end of small screen */
+    
+    
+    
+    
+    
+    
+    
+    
+      /* Medium Screen */
+      @media screen and (min-width: 501px) {
+
+
+        #home-page {
+          margin-top: 3rem;
+        }
+
+
+    #header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;  
+      margin-top: 3.5rem;
+      padding: 1px 0;
+      border: 1px black solid;
+      border-left: none;
+      border-right: none;
+    }
+
+    p, p.deal {
+      display: none;
+    }
+
+
+    #content {
+      display: flex;
+      flex-direction: row;
+      margin: 0 2%;
+     
+    }
+
+
+
+    figure.image {
+      background-color: darkgray;
+      width: 40%;
+      height: 15rem;
+      margin: .4rem .5rem;
+
+    }
+
+
+    figure.image2 {
+      background-color: darkgray;
+      width: 80%;
+      height: 15rem;
+      margin: .4rem .5rem;
+    }
+
+    #smallbox {
+      background-color: darkgray;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+      padding: 1px 2px;
+    }
+
+
+
+
+h2 {
+  margin-top: 3rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+    #extra {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    figure.image3 {
+      background-color: darkgray;
+      width: 100%;
+      height: 15rem;
+      margin: .2rem .5rem;
+    }
+
+
+      } /* end of medium screen
+    
+    
+    
+    
+    
+    
+    
+    
+      /* Large Screen */
+      @media screen and (min-width: 961px) {
+    #header {
+      align-items: center;
+     margin: 2rem auto;
+     height: 6rem;
+    }
+
+    #content {
+      margin: auto 6rem;
+    }
+
+    figure.image2 {
+      width: 82%;
+      height: 28rem;
+    }
+
+    figure.image {
+      height: 28rem;
+    }
+    
+      } /* end of large screen */
