@@ -124,6 +124,7 @@
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* end of CSS Reset */
 /* Small Screen */
 @media screen and (max-width: 500px) {
   #header {
