@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
 * {
   /* HTML5 display-role reset for older browsers */
 }
@@ -129,6 +130,7 @@ h1 {
   text-align: center;
   color: #17b3cd;
   background-color: #673b23;
+  font-weight: 800;
 }
 /* These are the mixins */
 nav ul li {
@@ -157,6 +159,7 @@ nav ul li a:hover {
 }
 body {
   background-color: #eaffff;
+  font-family: 'Barlow', sans-serif;
 }
 /* Small Screen */
 @media screen and (max-width: 500px) {
