@@ -125,6 +125,25 @@
   border-spacing: 0;
 }
 /* end of CSS Reset */
+nav ul li {
+  float: left;
+  width: 50%;
+  text-decoration: none;
+  list-style-type: none;
+}
+nav ul li a {
+  display: block;
+  padding: 1.5rem 1.5rem;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: lightblue;
+}
+nav ul li.active a {
+  color: blue;
+}
+nav ul li a:hover {
+  color: darkgray;
+}
 /* Small Screen */
 @media screen and (max-width: 500px) {
   #header {
@@ -137,23 +156,30 @@
     margin-top: 3.5rem;
     padding: 1px 0;
   }
-  ul.menu {
-    display: block;
-    text-decoration: none;
-    list-style-type: none;
-  }
   p {
     text-align: center;
     font-size: .8rem;
     margin: .3rem 0;
   }
   p.deal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  p.deal a {
+    color: darkblue;
     background-color: orange;
-    padding: .4rem 0;
-    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 35px;
+    margin: 1.5rem 2rem;
+  }
+  p.deal a:hover {
+    color: lightblue;
+    background-color: purple;
   }
   #content {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -198,9 +224,22 @@
     border-left: none;
     border-right: none;
   }
-  p,
   p.deal {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p.deal a {
+    color: darkblue;
+    background-color: orange;
+    padding: .5rem 1rem;
+    border-radius: 35px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  p.deal a:hover {
+    color: lightblue;
+    background-color: purple;
   }
   #content {
     display: flex;
@@ -264,6 +303,17 @@
   figure.image2 {
     width: 82%;
     height: 28rem;
+  }
+  #smallbox {
+    margin: 2rem 6rem;
+    padding: 2rem 0;
+  }
+  h2 {
+    margin: 0 7rem;
+    font-size: 2rem;
+  }
+  #extra {
+    margin: 0 6rem;
   }
   figure.image {
     height: 28rem;

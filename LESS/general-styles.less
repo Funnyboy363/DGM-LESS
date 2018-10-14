@@ -1,12 +1,61 @@
 // general styles
 
+.dealbox(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dealboxa(){
+  color: darkblue;
+  background-color: orange;
+  padding: .5rem 1rem;
+  border-radius: 35px;
+}
+
+.dealboxahover() {
+  color: lightblue;
+  background-color: purple;
+}
 
 
+nav {
+  ul li {
+    float: left;
+    width: 50%;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+    ul li a {
+      display: block;
+      padding: 1.5rem 1.5rem;
+      list-style-type: none;
+      text-decoration: none;
+      background-color: lightblue;
+    }
+  
+
+    ul li.active a {
+      color: blue;
+    }
+
+    ul li a:hover {
+      color: darkgray;
+    }
+
+
+
+}
 
 
 
 
   /* Small Screen */
+
+
+
+
   @media screen and (max-width: 500px) {
     #header {
       border: 1px black solid;
@@ -22,12 +71,6 @@
     }
     
 
-    ul.menu {
-      display: block;
-      text-decoration: none;
-      list-style-type: none;
-    }
-
     p {
       text-align: center;
       font-size: .8rem;
@@ -35,13 +78,23 @@
     }
 
     p.deal {
-      background-color: orange;
-      padding: .4rem 0;
-      width: 100%;
+      .dealbox;
+      font-size: 1.5rem;
+      
+
+      a {
+        .dealboxa;
+      margin: 1.5rem 2rem;
+      }
+
+      a:hover {
+        .dealboxahover;
+      }
+
     }
 
     #content {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -114,9 +167,20 @@ figure.image3 {
       border-right: none;
     }
 
-    p, p.deal {
-      display: none;
-    }
+     p.deal {
+       .dealbox;
+
+      a {
+        .dealboxa;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      a:hover {
+        .dealboxahover;
+      }
+
+     }
 
 
     #content {
@@ -198,6 +262,20 @@ h2 {
     figure.image2 {
       width: 82%;
       height: 28rem;
+    }
+
+    #smallbox {
+      margin: 2rem 6rem;
+      padding: 2rem 0;
+    }
+
+    h2 {
+      margin: 0 7rem;
+      font-size: 2rem;
+    }
+
+    #extra {
+      margin: 0 6rem;
     }
 
     figure.image {
