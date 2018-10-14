@@ -7,15 +7,16 @@
 }
 
 .dealboxa(){
-  color: darkblue;
-  background-color: orange;
+  color: lightblue;
+  background-color: @secondaryColor;
   padding: .5rem 1rem;
   border-radius: 35px;
 }
 
 .dealboxahover() {
-  color: lightblue;
-  background-color: purple;
+ 
+  color: @secondaryColor;
+  background-color: @primaryColor;
 }
 
 
@@ -25,6 +26,7 @@ nav {
     width: 50%;
     text-decoration: none;
     list-style-type: none;
+    font-size: 1.5rem;
   }
 
     ul li a {
@@ -32,15 +34,20 @@ nav {
       padding: 1.5rem 1.5rem;
       list-style-type: none;
       text-decoration: none;
+      color: @primaryColor;
     }
   
 
-    ul li.active a {
-      color: blue;
+    ul li a.active {
+      color: @secondaryColor;
+      background-color: #beb0a7;
+      border-radius: .5rem;
     }
 
     ul li a:hover {
-      color: darkgray;
+      color: @secondaryColor;
+      background-color: #beb0a7;
+      border-radius: .5rem;
     }
 
 
@@ -49,7 +56,7 @@ nav {
 
 
 body {
-  background-color: #cfd1c9;
+  background-color: #eaffff;
 }
 
 
@@ -70,7 +77,7 @@ body {
       flex-direction: row;
       justify-content: space-around;
       padding: 1px 0;
-
+    
 
     }
 
@@ -180,6 +187,7 @@ figure.image3 {
       border: 1px black solid;
       border-left: none;
       border-right: none;
+      
     }
 
 
@@ -300,7 +308,7 @@ h2 {
 
     #header {
       align-items: center;
-     margin: 2rem 4rem;
+     margin: 2rem 6.5rem;
      height: 4rem;
     }
 

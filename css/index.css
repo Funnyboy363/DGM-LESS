@@ -130,21 +130,27 @@ nav ul li {
   width: 50%;
   text-decoration: none;
   list-style-type: none;
+  font-size: 1.5rem;
 }
 nav ul li a {
   display: block;
   padding: 1.5rem 1.5rem;
   list-style-type: none;
   text-decoration: none;
+  color: #17b3cd;
 }
-nav ul li.active a {
-  color: blue;
+nav ul li a.active {
+  color: #673b23;
+  background-color: #beb0a7;
+  border-radius: .5rem;
 }
 nav ul li a:hover {
-  color: darkgray;
+  color: #673b23;
+  background-color: #beb0a7;
+  border-radius: .5rem;
 }
 body {
-  background-color: #cfd1c9;
+  background-color: #eaffff;
 }
 /* Small Screen */
 @media screen and (max-width: 500px) {
@@ -176,15 +182,15 @@ body {
     font-size: 1.5rem;
   }
   p.deal a {
-    color: darkblue;
-    background-color: orange;
+    color: lightblue;
+    background-color: #673b23;
     padding: .5rem 1rem;
     border-radius: 35px;
     margin: 1.5rem 2rem;
   }
   p.deal a:hover {
-    color: lightblue;
-    background-color: purple;
+    color: #673b23;
+    background-color: #17b3cd;
   }
   #content {
     margin-top: 1rem;
@@ -245,16 +251,16 @@ body {
     align-items: center;
   }
   p.deal a {
-    color: darkblue;
-    background-color: orange;
+    color: lightblue;
+    background-color: #673b23;
     padding: .5rem 1rem;
     border-radius: 35px;
     font-size: 2rem;
     margin-bottom: 2rem;
   }
   p.deal a:hover {
-    color: lightblue;
-    background-color: purple;
+    color: #673b23;
+    background-color: #17b3cd;
   }
   #content {
     display: flex;
@@ -319,7 +325,7 @@ body {
   }
   #header {
     align-items: center;
-    margin: 2rem 4rem;
+    margin: 2rem 6.5rem;
     height: 4rem;
   }
   #content {
