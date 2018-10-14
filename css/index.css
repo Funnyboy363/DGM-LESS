@@ -189,7 +189,7 @@ body {
     margin: 1.5rem 2rem;
   }
   p.deal a:hover {
-    color: #673b23;
+    color: black;
     background-color: #17b3cd;
   }
   #content {
@@ -259,7 +259,7 @@ body {
     margin-bottom: 2rem;
   }
   p.deal a:hover {
-    color: #673b23;
+    color: black;
     background-color: #17b3cd;
   }
   #content {
