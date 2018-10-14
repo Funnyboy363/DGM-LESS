@@ -32,7 +32,6 @@ nav {
       padding: 1.5rem 1.5rem;
       list-style-type: none;
       text-decoration: none;
-      background-color: lightblue;
     }
   
 
@@ -49,6 +48,9 @@ nav {
 }
 
 
+body {
+  background-color: #cfd1c9;
+}
 
 
   /* Small Screen */
@@ -57,17 +59,30 @@ nav {
 
 
   @media screen and (max-width: 500px) {
+    
+    
+    
     #header {
       border: 1px black solid;
       border-left: none;
       border-right: none;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;  
-      margin-top: 3.5rem;
+      justify-content: space-around;
       padding: 1px 0;
 
 
+    }
+
+    #tophead {
+      figure.photo {
+        width: 40%;
+        margin: 0 auto;
+      }
+    
+      figure.photo img {
+        width: 100%;
+      }
     }
     
 
@@ -114,7 +129,7 @@ nav {
       background-color: darkgray;
       font-size: 1.5rem;
       text-align: center;
-      margin-top: -2rem;
+      margin: 2rem 0;
     }
     
 
@@ -166,6 +181,23 @@ figure.image3 {
       border-left: none;
       border-right: none;
     }
+
+
+
+
+    #tophead {
+      figure.photo {
+        width: 50%;
+        margin: 0 auto;
+      }
+    
+      figure.photo img {
+        width: 100%;
+      }
+    }
+
+
+
 
      p.deal {
        .dealbox;
@@ -249,10 +281,27 @@ h2 {
     
       /* Large Screen */
       @media screen and (min-width: 961px) {
+
+        #tophead {
+
+          margin: 0 6rem;
+
+          figure.photo {
+            width: 20%;
+            margin: 1rem auto;
+          }
+        
+          figure.photo img {
+            width: 100%;
+          }
+        }
+
+
+
     #header {
       align-items: center;
-     margin: 2rem auto;
-     height: 6rem;
+     margin: 2rem 4rem;
+     height: 4rem;
     }
 
     #content {
