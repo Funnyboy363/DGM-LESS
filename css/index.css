@@ -126,49 +126,40 @@
   border-spacing: 0;
 }
 /* end of CSS Reset */
-h1 {
-  text-align: center;
-  color: #17b3cd;
-  background-color: #673b23;
-  font-weight: 800;
-}
 /* These are the mixins */
-nav ul li {
-  float: left;
-  width: 50%;
-  text-decoration: none;
-  list-style-type: none;
-  font-size: 1.5rem;
-}
-nav ul li a {
-  display: block;
-  padding: 1.5rem 1.5rem;
-  list-style-type: none;
-  text-decoration: none;
-  color: #17b3cd;
-}
-nav ul li a.active {
-  color: #673b23;
-  background-color: #beb0a7;
-  border-radius: .5rem;
-}
-nav ul li a:hover {
-  color: #673b23;
-  background-color: #beb0a7;
-  border-radius: .5rem;
-}
-#headwrapper {
-  background-color: #cccfff;
-  padding: 2rem 0;
-}
-body {
-  background-color: #eaffff;
-  font-family: 'Barlow', sans-serif;
-}
-/* Small Screen */
 @media screen and (max-width: 500px) {
+  nav ul li {
+    float: left;
+    width: 50%;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: #17b3cd;
+  }
+  nav ul li a.active {
+    color: #673b23;
+    background-color: #beb0a7;
+    border-radius: .5rem;
+  }
+  nav ul li a:hover {
+    color: #673b23;
+    background-color: #beb0a7;
+    border-radius: .5rem;
+  }
   h1 {
     margin-bottom: 2rem;
+    font-weight: 200px;
+    text-align: center;
+    color: #17b3cd;
+    font-weight: 800;
+    margin-top: 1rem;
+    font-size: 1.5rem;
   }
   #header {
     border: 1px black solid;
@@ -178,6 +169,10 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding: 1px 0;
+  }
+  #headwrapper {
+    background-color: #cccfff;
+    padding: 2rem 0;
   }
   #tophead figure.photo {
     width: 100%;
@@ -252,10 +247,37 @@ body {
 /* end of small screen */
 /* Medium Screen */
 @media screen and (min-width: 501px) {
+  nav ul li {
+    float: left;
+    width: 50%;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1.5rem 1.9rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: #17b3cd;
+  }
+  nav ul li a.active {
+    color: #673b23;
+    background-color: #beb0a7;
+    border-radius: .5rem;
+  }
+  nav ul li a:hover {
+    color: #673b23;
+    background-color: #beb0a7;
+    border-radius: .5rem;
+  }
   h1 {
     font-size: 3rem;
     width: 27rem;
     margin: 0 auto;
+    text-align: center;
+    color: #17b3cd;
+    font-weight: 800;
   }
   #home-page {
     margin-top: 3rem;
@@ -352,9 +374,36 @@ body {
     
       /* Large Screen */
 @media screen and (min-width: 961px) {
+  nav ul li {
+    float: left;
+    width: 50%;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1.5rem 1.2rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: #17b3cd;
+  }
+  nav ul li a.active {
+    color: #673b23;
+    background-color: #beb0a7;
+    border-radius: .5rem;
+  }
+  nav ul li a:hover {
+    color: #673b23;
+    background-color: #beb0a7;
+    border-radius: .5rem;
+  }
   h1 {
     font-size: 4rem;
     width: 36rem;
+    text-align: center;
+    color: #17b3cd;
+    font-weight: 800;
   }
   #tophead {
     margin: 0 6rem;
@@ -401,6 +450,11 @@ body {
     background-color: darkgray;
     width: 20rem;
     height: 15rem;
+  }
+}
+@media screen and (min-width: 961px) and (min-width: 961px) {
+  body {
+    background-color: lightgreen;
   }
 }
 /* end of large screen */
