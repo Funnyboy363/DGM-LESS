@@ -127,335 +127,281 @@
 }
 /* end of CSS Reset */
 /* These are the mixins */
-@media screen and (max-width: 500px) {
+#home-page {
+  margin-top: 3rem;
+}
+nav ul li {
+  float: left;
+  width: 50%;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1rem;
+}
+@media (min-width: 501px) {
   nav ul li {
-    float: left;
-    width: 50%;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1rem;
-  }
-  nav ul li a {
-    display: block;
-    padding: 1rem 1.5rem;
-    list-style-type: none;
-    text-decoration: none;
-    color: #17b3cd;
-  }
-  nav ul li a.active {
-    color: #673b23;
-    background-color: #beb0a7;
-    border-radius: .5rem;
-  }
-  nav ul li a:hover {
-    color: #673b23;
-    background-color: #beb0a7;
-    border-radius: .5rem;
-  }
-  h1 {
-    margin-bottom: 2rem;
-    font-weight: 200px;
-    text-align: center;
-    color: #17b3cd;
-    font-weight: 800;
-    margin-top: 1rem;
     font-size: 1.5rem;
-  }
-  #header {
-    border: 1px black solid;
-    border-left: none;
-    border-right: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1px 0;
-  }
-  #headwrapper {
-    background-color: #cccfff;
-    padding: 2rem 0;
-  }
-  #tophead figure.photo {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 1rem;
-  }
-  #tophead figure.photo img {
-    width: 100%;
-  }
-  p {
-    text-align: center;
-    font-size: .8rem;
-    margin: .3rem 0;
-  }
-  p.deal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-  p.deal a {
-    color: lightblue;
-    background-color: #673b23;
-    padding: .5rem 1rem;
-    border-radius: 35px;
-    margin: 1.5rem 2rem;
-  }
-  p.deal a:hover {
-    color: black;
-    background-color: #17b3cd;
-  }
-  #content {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  figure.image,
-  figure.image2 {
-    background-color: darkgray;
-    width: 100%;
-    height: 20rem;
-    margin: 1rem auto;
-  }
-  #smallbox {
-    background-color: darkgray;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 2rem 0;
-  }
-  #extra {
-    display: flex;
-    flex-direction: row;
-  }
-  figure.image3 {
-    background-color: darkgray;
-    width: 100%;
-    height: 15rem;
-    margin: .2rem .5rem;
-  }
-  #store2 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  figure.image4 {
-    background-color: darkgray;
-    width: 8.9rem;
-    height: 15rem;
-    margin: .9rem auto;
   }
 }
-/* end of small screen */
-/* Medium Screen */
-@media screen and (min-width: 501px) {
-  nav ul li {
-    float: left;
-    width: 50%;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.5rem;
-  }
+nav ul li a {
+  display: block;
+  padding: 1rem 1rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: #17b3cd;
+  border-radius: .5rem;
+}
+@media (min-width: 501px) {
   nav ul li a {
-    display: block;
-    padding: 1.5rem 1.9rem;
-    list-style-type: none;
-    text-decoration: none;
-    color: #17b3cd;
+    padding: 1rem 1.9rem;
   }
-  nav ul li a.active {
-    color: #673b23;
-    background-color: #beb0a7;
-    border-radius: .5rem;
+}
+@media (min-width: 961px) {
+  nav ul li a {
+    padding: 1rem 1.2rem;
   }
-  nav ul li a:hover {
-    color: #673b23;
-    background-color: #beb0a7;
-    border-radius: .5rem;
+}
+nav ul li a:hover {
+  color: #673b23;
+  background-color: #000000;
+  border-radius: .5rem;
+}
+nav ul li a.active {
+  color: #673b23;
+  background-color: #beb0a7;
+  border-radius: .5rem;
+}
+@media (min-width: 961px) {
+  body {
+    background-color: lightgreen;
   }
+}
+h1 {
+  margin-bottom: 2rem;
+  font-weight: 200px;
+  text-align: center;
+  color: #17b3cd;
+  font-weight: 800;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 501px) {
   h1 {
     font-size: 3rem;
     width: 27rem;
     margin: 0 auto;
-    text-align: center;
-    color: #17b3cd;
-    font-weight: 800;
   }
-  #home-page {
-    margin-top: 3rem;
+}
+@media (min-width: 961px) {
+  h1 {
+    font-size: 4rem;
+    width: 36rem;
   }
-  #header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 3.5rem;
-    padding: 1px 0;
-    border: 1px black solid;
-    border-left: none;
-    border-right: none;
-  }
-  #tophead figure.photo {
-    width: 50%;
-    margin: 0 auto;
-  }
-  #tophead figure.photo img {
-    width: 100%;
-  }
-  p.deal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  p.deal a {
-    color: lightblue;
-    background-color: #673b23;
-    padding: .5rem 1rem;
-    border-radius: 35px;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  p.deal a:hover {
-    color: black;
-    background-color: #17b3cd;
-  }
-  #content {
-    display: flex;
-    flex-direction: row;
-    margin: 0 2%;
-  }
-  figure.image {
-    background-color: darkgray;
-    width: 40%;
-    height: 15rem;
-    margin: .4rem .5rem;
-  }
-  figure.image2 {
-    background-color: darkgray;
-    width: 80%;
-    height: 15rem;
-    margin: .4rem .5rem;
-  }
-  #smallbox {
-    background-color: darkgray;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1rem;
-    padding: 1px 2px;
-  }
+}
+@media (min-width: 501px) {
   h2 {
     margin-top: 3rem;
     font-size: 1rem;
     margin-left: 1rem;
   }
-  #extra {
-    display: flex;
-    flex-direction: row;
-  }
-  figure.image3 {
-    background-color: darkgray;
-    width: 100%;
-    height: 15rem;
-    margin: .2rem .5rem;
-  }
-  #store2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  figure.image4 {
-    background-color: darkgray;
-    width: 10rem;
-    height: 15rem;
-    margin: .9rem auto;
-  }
 }
-/* end of medium screen
-    
-    
-
-    
-      /* Large Screen */
-@media screen and (min-width: 961px) {
-  nav ul li {
-    float: left;
-    width: 50%;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.5rem;
-  }
-  nav ul li a {
-    display: block;
-    padding: 1.5rem 1.2rem;
-    list-style-type: none;
-    text-decoration: none;
-    color: #17b3cd;
-  }
-  nav ul li a.active {
-    color: #673b23;
-    background-color: #beb0a7;
-    border-radius: .5rem;
-  }
-  nav ul li a:hover {
-    color: #673b23;
-    background-color: #beb0a7;
-    border-radius: .5rem;
-  }
-  h1 {
-    font-size: 4rem;
-    width: 36rem;
-    text-align: center;
-    color: #17b3cd;
-    font-weight: 800;
-  }
-  #tophead {
-    margin: 0 6rem;
-  }
-  #tophead figure.photo {
-    width: 40%;
-    margin: 1rem auto;
-  }
-  #tophead figure.photo img {
-    width: 100%;
-  }
-  #header {
-    align-items: center;
-    margin: 2rem 6.5rem;
-    height: 4rem;
-  }
-  #content {
-    margin: auto 6rem;
-  }
-  figure.image2 {
-    width: 82%;
-    height: 28rem;
-  }
-  #smallbox {
-    margin: 2rem 6rem;
-    padding: 2rem 0;
-  }
+@media (min-width: 961px) {
   h2 {
     margin: 0 7rem;
     font-size: 2rem;
   }
-  #extra {
+}
+#header {
+  border: 1px black solid;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1px 0;
+}
+@media (min-width: 501px) {
+  #header {
+    margin-top: 3.5rem;
+  }
+}
+@media (min-width: 961px) {
+  #header {
+    align-items: center;
+    margin: 2rem 6rem;
+    height: 5rem;
+  }
+}
+#headwrapper {
+  background-color: #cccfff;
+  padding: 2rem 0;
+}
+@media (min-width: 961px) {
+  #tophead {
     margin: 0 6rem;
   }
+}
+#tophead figure.photo {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+@media (min-width: 501px) {
+  #tophead figure.photo {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 961px) {
+  #tophead figure.photo {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
+#tophead figure.photo img {
+  width: 100%;
+}
+p {
+  text-align: center;
+  font-size: .8rem;
+  margin: .3rem 0;
+}
+p.deal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+a {
+  color: lightblue;
+  background-color: #673b23;
+  padding: .5rem 1rem;
+  border-radius: 35px;
+  margin: 1.5rem 2rem;
+}
+@media (min-width: 501px) {
+  a {
+    margin-bottom: 2rem;
+  }
+}
+a:hover {
+  color: black;
+  background-color: #17b3cd;
+}
+#content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 501px) {
+  #content {
+    flex-direction: row;
+    margin: 0 2%;
+  }
+}
+@media (min-width: 961px) {
+  #content {
+    margin: auto 6rem;
+  }
+}
+figure.image {
+  background-color: darkgray;
+  width: 100%;
+  height: 20rem;
+  margin: 1rem auto;
+}
+@media (min-width: 501px) {
+  figure.image {
+    width: 40%;
+    height: 15rem;
+    margin: .4rem .5rem;
+  }
+}
+@media (min-width: 961px) {
   figure.image {
     height: 28rem;
   }
+}
+figure.image figure.image {
+  height: 30rem;
+}
+figure.image2 {
+  background-color: darkgray;
+  width: 100%;
+  height: 15rem;
+  margin: .4rem auto;
+}
+@media (min-width: 961px) {
+  figure.image2 {
+    width: 82%;
+    height: 28rem;
+  }
+}
+figure.image2 figure.image {
+  height: 28rem;
+}
+#smallbox {
+  background-color: darkgray;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+@media (min-width: 501px) {
+  #smallbox {
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 1px 2px;
+  }
+}
+@media (min-width: 961px) {
+  #smallbox {
+    margin: 2rem 6rem;
+    padding: 2rem 0;
+  }
+}
+#extra {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 961px) {
+  #extra {
+    margin: 0 6rem;
+  }
+}
+figure.image3 {
+  background-color: darkgray;
+  width: 100%;
+  height: 15rem;
+  margin: .2rem .5rem;
+}
+#store2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 501px) {
   #store2 {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 961px) {
+  #store2 {
     margin: 1rem 9rem;
   }
+}
+figure.image4 {
+  background-color: darkgray;
+  width: 8.9rem;
+  height: 15rem;
+  margin: .9rem auto;
+}
+@media (min-width: 501px) {
   figure.image4 {
-    background-color: darkgray;
+    width: 10rem;
+  }
+}
+@media (min-width: 961px) {
+  figure.image4 {
     width: 20rem;
-    height: 15rem;
   }
 }
-@media screen and (min-width: 961px) and (min-width: 961px) {
-  body {
-    background-color: lightgreen;
-  }
-}
-/* end of large screen */
 /* font less styling */
